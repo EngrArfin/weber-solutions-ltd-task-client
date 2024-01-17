@@ -1,7 +1,9 @@
 import React from 'react';
+import photo from "../../../../../assets/Logo.jpg";
 import { Link } from 'react-router-dom';
 
-const CreateUser = () => {
+
+const PhotoNotAccept = () => {
     return (
         <section>
             <div>
@@ -19,9 +21,17 @@ const CreateUser = () => {
                                     </div>
                                     <div className="form-control">
                                         <label className="label">
-                                            <span className="label-text">Password</span>
+                                            <span className="label-text">Photo</span>
                                         </label>
-                                        <input type="password" placeholder="password" className="input input-bordered" required />
+                                        <input type="upload" placeholder="upload" className="input input-bordered" required />
+
+                                        {/* <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text text-white">Photo </span>
+                                    </label>
+                                    <input type="text" {...register("photoURL", { required: true })} placeholder="upload..." className="input input-bordered" />
+                                    {errors.photoURL && <span className="text-red-600">Uploadig....</span>}
+                                </div> */}
 
                                     </div>
                                     <div className="form-control mt-6">
@@ -51,7 +61,14 @@ const CreateUser = () => {
                                         </label>
                                         <input type="name" placeholder="Name" className="input input-bordered" required />
                                     </div>
-                                    
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="label-text">Photo</span>
+                                        </label>
+                                        <img src={photo} alt="" />
+                                        <p className='text-red-500'>Photo Not Accepted By Admin</p>
+
+                                    </div>
                                     <div className="form-control mt-6">
                                         <button className="btn btn-primary">Upload</button>
                                     </div>
@@ -66,4 +83,4 @@ const CreateUser = () => {
     );
 };
 
-export default CreateUser;
+export default PhotoNotAccept;

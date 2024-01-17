@@ -1,5 +1,6 @@
 import React from 'react';
-import form ''
+import Logo from "../../../../assets/Logo.jpg";
+import { Link } from 'react-router-dom';
 
 const AdminLogin = () => {
     return (
@@ -13,9 +14,9 @@ const AdminLogin = () => {
                         <form className="card-body">
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Email</span>
+                                    <span className="label-text">Admin User ID</span>
                                 </label>
-                                <input type="email" placeholder="email" className="input input-bordered" required />
+                                <input type="email" placeholder="User ID" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
@@ -27,13 +28,12 @@ const AdminLogin = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
+                                <Link to='/createuser' className="btn btn-primary"> AdminLogin</Link>
                             </div>
                         </form>
                     </div>
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Admin Login!</h1>
-                        <img src="/" alt="" />
+                        <img src={Logo} alt="" />
                     </div>
                 </div>
             </div>

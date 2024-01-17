@@ -1,19 +1,21 @@
 import React from 'react';
+import Logo from "../../../../assets/Logo.jpg";
+import { Link } from 'react-router-dom';
+
 
 const UserLogin = () => {
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    
                     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                    <h1 className="text-5xl font-bold">User Login!</h1>
+                        <h1 className="text-5xl font-bold">User Login!</h1>
                         <form className="card-body">
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Email</span>
+                                    <span className="label-text">User ID</span>
                                 </label>
-                                <input type="email" placeholder="email" className="input input-bordered" required />
+                                <input type="email" placeholder="user id" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
@@ -25,13 +27,12 @@ const UserLogin = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
+                                <Link to ='/upload' className="btn btn-primary">Login</Link>
                             </div>
                         </form>
                     </div>
                     <div className="text-center lg:text-left">
-                        
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <img src={Logo} alt="" />
                     </div>
                 </div>
             </div>
