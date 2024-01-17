@@ -8,9 +8,10 @@ import Home from '../pages/Home/Home/Home';
 import AdminLogin from '../pages/Home/Server/AdminLogin/AdminLogin';
 import UserLogin from '../pages/Home/Client/UserLogin/UserLogin';
 import UploadPage from '../pages/Home/Client/UploadPage/UploadPage';
-import PhotoNotAccept from '../pages/Home/Client/Client/PhotoNotAccept/PhotoNotAccept';
 import PhotoAccept from '../pages/Home/Client/PhotoAccept/PhotoAccept';
 import CreateUser from '../pages/Home/Server/CreateUser/CreateUser';
+import UserList from '../pages/Home/Server/UserList/UserList';
+import PhotoNotAccepted from '../pages/Home/Client/PhotoNotAccepted/PhotoNotAccepted';
 
 export const router = createBrowserRouter([
   {
@@ -35,7 +36,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/photonotaccept',
-        element: <PhotoNotAccept></PhotoNotAccept>,
+        element: <PhotoNotAccepted></PhotoNotAccepted>,
       },
       
       {
@@ -45,6 +46,10 @@ export const router = createBrowserRouter([
       {
         path: '/createuser',
         element: <CreateUser></CreateUser>,
+      },
+      {
+        path: '/userlist',
+        element: <UserList></UserList>,
       }
 
     ]

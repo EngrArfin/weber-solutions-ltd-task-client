@@ -1,10 +1,16 @@
 import React from 'react';
 import profile1 from "../../../../assets/profile1.jpg";
+import { Link } from 'react-router-dom';
 
 
 const UserList = () => {
     return (
-        <div>
+        <div className='pt-5 pl-10'>
+            <div className='pb-5'>
+                <Link to='/createuser' className="btn btn-active btn-primary ">Back</Link>
+
+            </div>
+
             <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}
@@ -55,10 +61,9 @@ const UserList = () => {
                             </td>
                             <th>
                                 <button className="btn btn-primary">Done </button>
-                                <button className="btn btn-outline btn-primary">Delete</button>
                             </th>
                         </tr>
-                      
+
 
                         {/* row 3 */}
                         <tr className='border border-black p-4'>
@@ -77,10 +82,9 @@ const UserList = () => {
                             </td>
                             <th>
                                 <button className="btn btn-primary">Done </button>
-                                <button className="btn btn-outline btn-primary">Delete</button>
                             </th>
                         </tr>
-                        
+
                         {/* row 4 */}
                         <tr className='border border-black p-4'>
                             <th className='border border-black p-4'>
@@ -98,10 +102,9 @@ const UserList = () => {
                             </td>
                             <th>
                                 <button className="btn btn-primary">Done </button>
-                                <button className="btn btn-outline btn-primary">Delete</button>
                             </th>
                         </tr>
-                       
+
 
                     </tbody>
 

@@ -1,7 +1,9 @@
 import React from 'react';
+import photo from "../../../../assets/Logo.jpg";
 import { Link } from 'react-router-dom';
 
-const PhotoAccept = () => {
+
+const PhotoNotAccepted = () => {
     return (
         <section>
             <div className='flex'>
@@ -59,4 +61,4 @@ const PhotoAccept = () => {
     );
 };
 
-export default PhotoAccept;
+export default PhotoNotAccepted;

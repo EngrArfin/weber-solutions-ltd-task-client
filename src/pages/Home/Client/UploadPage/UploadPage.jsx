@@ -26,14 +26,7 @@ const UploadPage = () => {
                                 </label>
                                 <input type="upload" placeholder="upload" className="input input-bordered" required />
 
-                                {/* <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text text-white">Photo </span>
-                                    </label>
-                                    <input type="text" {...register("photoURL", { required: true })} placeholder="upload..." className="input input-bordered" />
-                                    {errors.photoURL && <span className="text-red-600">Uploadig....</span>}
-                                </div> */}
-
+                    
                             </div>
                             <div className="form-control mt-6">
                                 <Link to='/photonotaccept' className="btn btn-primary">Upload</Link>
