@@ -1,68 +1,68 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./CreateUser.css";
+
 
 const CreateUser = () => {
     return (
-        <section>
-            <div>
-                <div>
-                    <div className="hero min-h-screen bg-sky-600">
-                        <div className="hero-content flex-col lg:flex-row-reverse">
-                            <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-
-                                <form className="card-body">
-                                    <div className="form-control">
-                                        <label className="label">
-                                            <span className="label-text">Name</span>
-                                        </label>
-                                        <input type="name" placeholder="Name" className="input input-bordered" required />
-                                    </div>
-                                    <div className="form-control">
-                                        <label className="label">
-                                            <span className="label-text">Password</span>
-                                        </label>
-                                        <input type="password" placeholder="password" className="input input-bordered" required />
-
-                                    </div>
-                                    <div className="form-control mt-6">
-                                        <button className="btn btn-primary">Upload</button>
-                                    </div>
-                                </form>
-                            </div>
-
-                        </div>
+        <section className='flex pl-20'>
+            <div className="login">
+                <form className="login-form">
+                    <h2>Create User</h2>
+                    <div>
+                        <label className="label">
+                            <span className="label-text ">User ID</span>
+                        </label>
+                        <input type="text" name="" id="" placeholder="Input Email " />
                     </div>
-                </div>
-            </div>
 
+
+                    <label className="label">
+                        <span className="label-text">Password</span>
+                    </label>
+                    <input type="password" name="" id="" placeholder="Password" />
+
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
             {/* part -2 */}
             <div>
-                <div>
-                    <Link className="btn btn-outline btn-warning">Back</Link >
-                    <div className="hero min-h-screen bg-sky-600">
-                        <div className="hero-content flex-col lg:flex-row-reverse">
+            <div className='pl-20'>
+            
+                <div className="hero min-h-screen ">
+                    <div className="hero-content flex-col lg:flex-row-reverse">
+                        
+                        <div className='flex flex-col gap-5'>
 
-                            <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                            <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-indigo-100">
 
-                                <form className="card-body">
-                                    <div className="form-control">
-                                        <label className="label">
-                                            <span className="label-text">Name</span>
-                                        </label>
-                                        <input type="name" placeholder="Name" className="input input-bordered" required />
-                                    </div>
-                                    
-                                    <div className="form-control mt-6">
-                                        <button className="btn btn-primary">Upload</button>
-                                    </div>
-                                </form>
+
+                                <div className="p-5 grid flex-grow h-40 w-80 card bg-indigo-100 rounded-box place-items-center">
+                                    <input type="text" placeholder="5644" className="  input input-bordered input-primary w-full max-w-xs" />
+
+                                </div>
+                            </div>
+
+                            <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-indigo-100">
+                                <div className="p-5 grid flex-grow h-40 w-80 card bg-indigo-100 rounded-box place-items-center">
+                                    <input type="text" placeholder="5644" className="  input input-bordered input-primary w-full max-w-xs" />
+
+                                </div>
                             </div>
 
                         </div>
+
                     </div>
                 </div>
+
             </div>
-        </section>
+            </div>
+            
+            
+            
+
+
+        </section >
     );
 };
 
